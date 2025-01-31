@@ -3,83 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reiseinspirasjon</title>
+    <title>Bestillingsopplysninger</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <section>
-            <img src="image/fav.png" alt="Description of the image">
-        </section>
-        
-        <section class="search-bar" ></section>
-            <input type="text" placeholder="Søk etter reisemål">
-        </section>
-        <section class="menu">&#9776;</section>
-    </header>
-
-    <section class="booking-section">
-        <h2>Finn en reise</h2>
-        <form>
-            <input type="text" placeholder="Hvor vil du dra?">
-            <input type="date">
-            <button type="submit">Søk</button>
-        </form>
-    </section>
-
-    <section class="promo-banner">
-        <h3>Bestill sommerens beste uke</h3>
-        <p>Fra 3 289,-</p>
-        <button>Bestill i dag</button>
-    </section>
-
-    <section class="tips-inspiration">
-        <h2>Tips & Inspirasjon</h2>
-        
-        <section class="destination">
-            <img src="image/holiday-2733322_1280.jpg" alt="Zakynthos">
-            <h3>Greske favoritter</h3>
-            <p>Fra kr 3 879,-</p>
-        </section>
-
-        <section class="destination">
-            <img src="image/beach-6514331_640.jpg" alt="Strand">
-            <h3>Solskinnsperler</h3>
-            <p>Fra kr 3 289,-</p>
-        </section>
-
-        <section class="destination">
-            <img src="image/beach-1836467_640.jpg" alt="Barcelona">
-            <h3>Storbyferie</h3>
-            <a href="#">Les mer</a>
-        </sevtion>
-
-        <section class="destination">
-            <img src="image/cathedral-427997_640.jpg" alt="London">
-            <h3>Besøk London</h3>
-            <p>Fra kr 2 314,-</p>
-        </section>
-
-        <section class="destination">
-            <img src="image/building-7014904_640.jpg" alt="London">
-            <h3>besøk påsekfavoritten London</h3>
-            <p>Fra kr 2 314,-</p>
-        </section>
-
-        <section class="destination">
-            <img src="image/ski-slope-3223709_640.jpg" alt="Skiferie">
-            <h3>Skiferie</h3>
-            <a href="#">Se mer</a>
-        </section>
-        <section="destination">
-            <img src="image/beach-666122_640 (1).jpg" alt="Skiferie">
-            <h3>beach</h3>
-            <a href="#">Se mer</a>
+    <div class="container">
+        <div class="header">
+            <section>
+                <img src="image/fav.png" alt="Description of the image">
+            </section>
+            <nav>
+                <a href="#">Søk</a>
+                <a href="#">Søkeresultater</a>
+                <a href="#">Romtype</a>
+                <a href="#">Fly</a>
+                <a href="#">Tillegg</a>
+            </nav>
         </div>
-    </section>
-
-    <footer>
+        <h1>Oppgi dine bestillingsopplysninger</h1>
+        <form>
+            <h2>Voksen 18+ Hovedbestiller</h2>
+            <label for="fornavn">Fornavn (ifølge pass):</label>
+            <input type="text" id="fornavn" name="fornavn">
+            <label for="etternavn">Etternavn (ifølge pass):</label>
+            <input type="text" id="etternavn" name="etternavn">
+            <label for="fødselsdato">Fødselsdato:</label>
+            <input type="text" id="fødselsdato_dd" name="fødselsdato_dd" placeholder="DD">
+            <input type="text" id="fødselsdato_mm" name="fødselsdato_mm" placeholder="MM">
+            <input type="text" id="fødselsdato_yyyy" name="fødselsdato_yyyy" placeholder="ÅÅÅÅ">
+            <div class="radio-group">
+                <input type="radio" id="kvinne" name="kjønn" value="kvinne">
+                <label for="kvinne">Kvinne</label>
+                <input type="radio" id="mann" name="kjønn" value="mann">
+                <label for="mann">Mann</label>
+            </div>
+            <label for="epostadresse">E-postadresse:</label>
+            <input type="email" id="epostadresse" name="epostadresse">
+            <label for="telefonnummer">Telefonnummer:</label>
+            <input type="tel" id="telefonnummer" name="telefonnummer">
+            <label for="nationalitet">Nationalitet:</label>
+            <select id="nationalitet" name="nationalitet">
+                <option value="norsk">Norsk</option>
+                <option value="annen">Annen</option>
+            </select>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
         <footer>
 
             <ul class="footer-flag">
@@ -191,7 +159,6 @@
         </footer>
         
         
-    </footer>
-
+    </footer> 
 </body>
 </html>
